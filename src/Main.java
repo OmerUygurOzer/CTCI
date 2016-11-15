@@ -36,8 +36,13 @@ public class Main {
 //            System.out.print(test[i]);
 //        }
 
-        LongestAbsoluteFilePath longestAbsoluteFilePath = new LongestAbsoluteFilePath();
-       longestAbsoluteFilePath.lengthLongestPath("dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext");
+//        LongestAbsoluteFilePath longestAbsoluteFilePath = new LongestAbsoluteFilePath();
+//       longestAbsoluteFilePath.lengthLongestPath("dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext");
       // longestAbsoluteFilePath.lengthLongestPath("dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext");
+
+        ReverseWordsInString reverseWordsInString = new ReverseWordsInString();
+        System.out.println(reverseWordsInString.reverseWords("the sky is blue"));
+        System.out.println(reverseWordsInString.reverseWords("1"));
+
     }
 }
