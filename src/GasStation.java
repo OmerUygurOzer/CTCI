@@ -3,23 +3,25 @@
  */
 public class GasStation {
     public int canCompleteCircuit(int[] gas, int[] cost) {
-        int index = -1;
-        //Todo : fix!
-        int total = 0;
+        int index = 0;
 
-        for(int i = 0;i<gas.length;i++){
-            total += gas[i]-cost[i];
-        }
+        int circ = gas.length;
 
-        int cur = 0;
+        int gained = 0;
+        int sum = 0;
 
-        for(int i = 0;i<gas.length;i++){
-            cur+= gas[i]-cost[i];
-            if(cur<=total-cur){
-                index = i;
+        for(int i = 0; i < circ;i++){
+            int cur = gas[i]-cost[i];
+
+            gained+=cur;
+            sum+=cur;
+            if(gained<0){
+                gained=0;
+                index=i+1;
             }
+
         }
 
-        return index;
+        return sum>=0?index:-1;
     }
 }
