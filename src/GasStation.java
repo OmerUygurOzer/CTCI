@@ -4,7 +4,7 @@
 public class GasStation {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int index = -1;
-//Todo : fix!
+        //Todo : fix!
         int total = 0;
 
         for(int i = 0;i<gas.length;i++){

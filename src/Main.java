@@ -27,8 +27,17 @@ public class Main {
 //        NumberOf1Bits numberOf1Bits = new NumberOf1Bits();
 //        numberOf1Bits.hammingWeight(15);
 
-        AddStrings addStrings = new AddStrings();
-        System.out.println(addStrings.addStrings("0","0"));
+//        AddStrings addStrings = new AddStrings();
+//        System.out.println(addStrings.addStrings("0","0"));
 
+//        PlusOne plusOne = new PlusOne();
+//        int[] test = plusOne.plusOne(new int[]{9});
+//        for(int i = 0;i<test.length;i++){
+//            System.out.print(test[i]);
+//        }
+
+        LongestAbsoluteFilePath longestAbsoluteFilePath = new LongestAbsoluteFilePath();
+       longestAbsoluteFilePath.lengthLongestPath("dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext");
+      // longestAbsoluteFilePath.lengthLongestPath("dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext");
     }
 }
