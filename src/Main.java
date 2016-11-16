@@ -40,9 +40,23 @@ public class Main {
 //       longestAbsoluteFilePath.lengthLongestPath("dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext");
       // longestAbsoluteFilePath.lengthLongestPath("dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext");
 
-        ReverseWordsInString reverseWordsInString = new ReverseWordsInString();
-        System.out.println(reverseWordsInString.reverseWords("the sky is blue"));
-        System.out.println(reverseWordsInString.reverseWords("1"));
+//        ReverseWordsInString reverseWordsInString = new ReverseWordsInString();
+//        System.out.println(reverseWordsInString.reverseWords("the sky is blue"));
+//        System.out.println(reverseWordsInString.reverseWords("1"));
+
+//        CombinationSumII combinationSumII = new CombinationSumII();
+//        combinationSumII.combinationSum2(new int[]{10,1,2,7,6,1,5},8);
+
+        SkylineProblem skylineProblem = new SkylineProblem();
+        int[][] test = new int[][]{{2,9,10},
+                {3,7,15},
+                {5,12,12},
+                {15,20,10},
+                {19,24,8}};
+
+        skylineProblem.getSkyline(test);
+
+
 
     }
 }

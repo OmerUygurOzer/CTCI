@@ -6,8 +6,6 @@ import java.util.List;
  */
 public class PathSumII {
 
-
-
       public class TreeNode {
           int val;
           TreeNode left;
