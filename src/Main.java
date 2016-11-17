@@ -47,14 +47,17 @@ public class Main {
 //        CombinationSumII combinationSumII = new CombinationSumII();
 //        combinationSumII.combinationSum2(new int[]{10,1,2,7,6,1,5},8);
 
-        SkylineProblem skylineProblem = new SkylineProblem();
-        int[][] test = new int[][]{{2,9,10},
-                {3,7,15},
-                {5,12,12},
-                {15,20,10},
-                {19,24,8}};
+//        SkylineProblem skylineProblem = new SkylineProblem();
+//        int[][] test = new int[][]{{2,9,10},
+//                {3,7,15},
+//                {5,12,12},
+//                {15,20,10},
+//                {19,24,8}};
+//
+//        skylineProblem.getSkyline(test);
 
-        skylineProblem.getSkyline(test);
+        SubsetsII subsetsII = new SubsetsII();
+        subsetsII.subsetsWithDup(new int[]{1,2,2});
 
 
 

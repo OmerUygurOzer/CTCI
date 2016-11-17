@@ -25,16 +25,15 @@ public class SkylineProblem {
 
         List<int[]> result = new ArrayList<>();
 
-        for(int x = maxX; x>=minX;x--){
-            if(!heights.containsKey(x)){heights.put(x,0);}
-        }
-        heights.put(minX-1,0);
-        heights.put(maxX+1,0);
         Set<Integer> setX = new HashSet<>();
 
-        int h = 0;
-        for(int x = maxX; x>=minX;x--){
+        List<Integer> keys = new ArrayList<>(heights.keySet());
+        Collections.sort(keys);
+
+
+        for(int x :keys){
             if(setX.contains(heights.get(x))){continue;}
+
                 if(heights.get(x-1)<heights.get(x+1)){
                     result.add(new int[]{x,heights.get(x)});
                 }else if(!setX.contains(heights.get(x))){
