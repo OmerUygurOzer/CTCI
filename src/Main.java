@@ -56,8 +56,10 @@ public class Main {
 //
 //        skylineProblem.getSkyline(test);
 
-        SubsetsII subsetsII = new SubsetsII();
-        subsetsII.subsetsWithDup(new int[]{1,2,2});
+//        SubsetsII subsetsII = new SubsetsII();
+//        subsetsII.subsetsWithDup(new int[]{1,2,2});
+
+//        System.out.print(Integer.compare(10,30));
 
 
 
