@@ -13,8 +13,6 @@ public class KthSmallestElementInBST {
       }
 
 
-
-
     public int kthSmallest(TreeNode root, int k) {
         StringBuilder builder = new StringBuilder();
         inOrder(builder,root);
