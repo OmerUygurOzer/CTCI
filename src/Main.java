@@ -65,19 +65,23 @@ public class Main {
 //        System.out.println(rainWater.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
 //        System.out.println(rainWater.trap(new int[]{4,2,3}));
 
-        LongestSubstringWithoutRepeatingChars longestSubstringWithoutRepeatingChars = new LongestSubstringWithoutRepeatingChars();
-        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("abcabcbb"));
-        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("bbbbbb"));
-        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("pwwkew"));
-        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("abcdefghc"));
-        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("aab"));
-        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("abaaaaab"));
-        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("abbbbbbacdefa"));
+//        LongestSubstringWithoutRepeatingChars longestSubstringWithoutRepeatingChars = new LongestSubstringWithoutRepeatingChars();
+//        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("abcabcbb"));
+//        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("bbbbbb"));
+//        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("pwwkew"));
+//        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("abcdefghc"));
+//        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("aab"));
+//        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("abaaaaab"));
+//        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("abbbbbbacdefa"));
 //
 
+        SerializeDeserializeBinaryTree.TreeNode treeNode = new SerializeDeserializeBinaryTree.TreeNode(4);
+        treeNode.left = new SerializeDeserializeBinaryTree.TreeNode(2);
+        treeNode.right = new SerializeDeserializeBinaryTree.TreeNode(6);
+        treeNode.right.right = new SerializeDeserializeBinaryTree.TreeNode(8);
 
-
-        RotateList rotateList = new RotateList();
+        SerializeDeserializeBinaryTree serializeDeserializeBinaryTree = new SerializeDeserializeBinaryTree();
+        serializeDeserializeBinaryTree.deserialize(serializeDeserializeBinaryTree.serialize(treeNode));
 
     }
 }
