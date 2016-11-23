@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -95,12 +96,20 @@ public class Main {
 //        BombEnemy bombEnemy = new BombEnemy();
 //        System.out.println(bombEnemy.maxKilledEnemies(h));
 
-        List<List<Integer>> array = new ArrayList();
-        array.add(Arrays.asList(1));
-        array.add(Arrays.asList(2,3));
-        array.add(Arrays.asList(5,0,-3));
-        Triangle triangle = new Triangle();
-        System.out.println(triangle.minimumTotal(array));
+//        List<List<Integer>> array = new ArrayList();
+//        array.add(Arrays.asList(1));
+//        array.add(Arrays.asList(2,3));
+//        array.add(Arrays.asList(5,0,-3));
+//        Triangle triangle = new Triangle();
+//        System.out.println(triangle.minimumTotal(array));
+        WordBreak wordBreak = new WordBreak();
+        HashSet<String> dict = new HashSet<>();
+        dict.add("cat");
+        dict.add("cats");
+        dict.add("and");
+        dict.add("sand");
+        dict.add("dog");
+        System.out.println(wordBreak.wordBreak("catsanddog",dict));
 
     }
 }
