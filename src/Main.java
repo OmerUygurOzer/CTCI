@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created by Omer on 10/24/2016.
  */
@@ -75,13 +79,28 @@ public class Main {
 //        System.out.println(longestSubstringWithoutRepeatingChars.lengthOfLongestSubstring("abbbbbbacdefa"));
 //
 
-        SerializeDeserializeBinaryTree.TreeNode treeNode = new SerializeDeserializeBinaryTree.TreeNode(4);
-        treeNode.left = new SerializeDeserializeBinaryTree.TreeNode(2);
-        treeNode.right = new SerializeDeserializeBinaryTree.TreeNode(6);
-        treeNode.right.right = new SerializeDeserializeBinaryTree.TreeNode(8);
+//        SerializeDeserializeBinaryTree.TreeNode treeNode = new SerializeDeserializeBinaryTree.TreeNode(4);
+//        treeNode.left = new SerializeDeserializeBinaryTree.TreeNode(2);
+//        treeNode.right = new SerializeDeserializeBinaryTree.TreeNode(6);
+//        treeNode.right.right = new SerializeDeserializeBinaryTree.TreeNode(8);
+//
+//        SerializeDeserializeBinaryTree serializeDeserializeBinaryTree = new SerializeDeserializeBinaryTree();
+//        serializeDeserializeBinaryTree.deserialize(serializeDeserializeBinaryTree.serialize(treeNode));
 
-        SerializeDeserializeBinaryTree serializeDeserializeBinaryTree = new SerializeDeserializeBinaryTree();
-        serializeDeserializeBinaryTree.deserialize(serializeDeserializeBinaryTree.serialize(treeNode));
+//        char[][] h = new char[][]{
+//                {'0','E','0','0'},
+//                {'E','0','W','E'},
+//                {'0','E','0','0'},};
+//
+//        BombEnemy bombEnemy = new BombEnemy();
+//        System.out.println(bombEnemy.maxKilledEnemies(h));
+
+        List<List<Integer>> array = new ArrayList();
+        array.add(Arrays.asList(1));
+        array.add(Arrays.asList(2,3));
+        array.add(Arrays.asList(5,0,-3));
+        Triangle triangle = new Triangle();
+        System.out.println(triangle.minimumTotal(array));
 
     }
 }
