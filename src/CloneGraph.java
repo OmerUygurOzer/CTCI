@@ -23,6 +23,7 @@ public class CloneGraph {
     }
 
     public void clone(UndirectedGraphNode node, UndirectedGraphNode clone, HashMap<Integer,UndirectedGraphNode> alreadyCreated){
+        if(alreadyCreated.containsKey(node.label)){return;}
         clone.label = node.label;
         alreadyCreated.put(clone.label,clone);
 
