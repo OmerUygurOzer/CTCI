@@ -102,14 +102,43 @@ public class Main {
 //        array.add(Arrays.asList(5,0,-3));
 //        Triangle triangle = new Triangle();
 //        System.out.println(triangle.minimumTotal(array));
-        WordBreak wordBreak = new WordBreak();
-        HashSet<String> dict = new HashSet<>();
-        dict.add("cat");
-        dict.add("cats");
-        dict.add("and");
-        dict.add("sand");
-        dict.add("dog");
-        System.out.println(wordBreak.wordBreak("catsanddog",dict));
+//        WordBreak wordBreak = new WordBreak();
+//        HashSet<String> dict = new HashSet<>();
+//        dict.add("cat");
+//        dict.add("cats");
+//        dict.add("and");
+//        dict.add("sand");
+//        dict.add("dog");
+//        System.out.println(wordBreak.wordBreak("catsanddog",dict));
+
+//        char[][] islands = new char[][]{
+//                {'1','1','0','0','0'},
+//                {'1','1','0','0','0'},
+//                {'0','0','1','0','0'},
+//                {'0','0','0','1','1'}};
+//        NumberOfIslandsI numberOfIslandsI = new NumberOfIslandsI();
+//        System.out.println(numberOfIslandsI.numIslands(islands));
+
+//        int[][] positions=  new int[][]{
+//                {0,1},
+//                {1,2},
+//                {2,1},
+//                {1,0},
+//                {0,2},
+//                {0,0},
+//                {1,1}
+//        };
+//
+//        NumberOfIslands numberOfIslands = new NumberOfIslands();
+//        System.out.println(numberOfIslands.numIslands2(3,3,positions));
+
+//        FlipGame flipGame = new FlipGame();
+//        System.out.println(flipGame.generatePossibleNextMoves("++++"));
+        MoveZeroes moveZeroes = new MoveZeroes();
+        int[] vals = new int[]{1,0,5,6,0,8,0,0,7,29,68,12,78,0,5,7,9,95,51,23,68,0,0,0,0,0,0,0};
+        moveZeroes.moveZeroes(vals);
+        for(int i:vals){System.out.print(i);}
+
 
     }
 }
