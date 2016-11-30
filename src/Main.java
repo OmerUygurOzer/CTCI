@@ -134,10 +134,21 @@ public class Main {
 
 //        FlipGame flipGame = new FlipGame();
 //        System.out.println(flipGame.generatePossibleNextMoves("++++"));
-        MoveZeroes moveZeroes = new MoveZeroes();
-        int[] vals = new int[]{1,0,5,6,0,8,0,0,7,29,68,12,78,0,5,7,9,95,51,23,68,0,0,0,0,0,0,0};
-        moveZeroes.moveZeroes(vals);
-        for(int i:vals){System.out.print(i);}
+//        MoveZeroes moveZeroes = new MoveZeroes();
+//        int[] vals = new int[]{1,0,5,6,0,8,0,0,7,29,68,12,78,0,5,7,9,95,51,23,68,0,0,0,0,0,0,0};
+//        moveZeroes.moveZeroes(vals);
+//        for(int i:vals){System.out.print(i);}
+
+//        ZigZagIterator zigZagIterator = new ZigZagIterator(Arrays.asList(1,2,7,3,8),Arrays.asList(3,4,5,6));
+//        while (zigZagIterator.hasNext()){
+//            System.out.println(zigZagIterator.next());
+//        }
+
+//        MissingRanges missingRanges = new MissingRanges();
+//        System.out.println(missingRanges.findMissingRanges(new int[]{0,1,3,50,75},0,99));
+
+//        LetterCombinationsOfPhone letterCombinationsOfPhone = new LetterCombinationsOfPhone();
+//        System.out.println(letterCombinationsOfPhone.letterCombinations("23"));
 
 
     }
