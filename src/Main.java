@@ -150,6 +150,28 @@ public class Main {
 //        LetterCombinationsOfPhone letterCombinationsOfPhone = new LetterCombinationsOfPhone();
 //        System.out.println(letterCombinationsOfPhone.letterCombinations("23"));
 
+//          RangeSumQuery rangeSumQuery = new RangeSumQuery(new int[][]{
+//                  {3,0,1,4,2},
+//                  {5,6,3,2,1},
+//                  {1,2,0,1,5},
+//                  {4,1,0,1,7},
+//                  {1,0,3,0,5}
+//          });
+//          System.out.println(rangeSumQuery.sumRegion(2,1,4,3));
+//          rangeSumQuery.update(3,2,2);
+//          System.out.println(rangeSumQuery.sumRegion(2,1,4,3));
 
+//        LongestIncreasingSubsequence longestIncreasingSubsequence = new LongestIncreasingSubsequence();
+//        System.out.println(longestIncreasingSubsequence.lengthOfLIS(new int[]{10,9,2,5,3,4}));
+//        System.out.println(longestIncreasingSubsequence.lengthOfLIS(new int[]{10,9,2,5,3,7,101,18}));
+
+//        PowXN powXN = new PowXN();
+//        System.out.println(powXN.myPow(2,18));
+
+//        WordSquares wordSquares = new WordSquares();
+//        System.out.println(wordSquares.wordSquares(new String[]{"area","lead","wall","lady","ball"}));
+
+        LongestSubStringWithAtMostKDistinct longestSubStringWithAtMostKDistinct = new LongestSubStringWithAtMostKDistinct();
+        System.out.println(longestSubStringWithAtMostKDistinct.lengthOfLongestSubstringKDistinct("eceba",2));
     }
 }
