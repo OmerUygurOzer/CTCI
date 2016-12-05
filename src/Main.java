@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Omer on 10/24/2016.
@@ -171,7 +168,24 @@ public class Main {
 //        WordSquares wordSquares = new WordSquares();
 //        System.out.println(wordSquares.wordSquares(new String[]{"area","lead","wall","lady","ball"}));
 
-        LongestSubStringWithAtMostKDistinct longestSubStringWithAtMostKDistinct = new LongestSubStringWithAtMostKDistinct();
-        System.out.println(longestSubStringWithAtMostKDistinct.lengthOfLongestSubstringKDistinct("eceba",2));
+//        LongestSubStringWithAtMostKDistinct longestSubStringWithAtMostKDistinct = new LongestSubStringWithAtMostKDistinct();
+//        System.out.println(longestSubStringWithAtMostKDistinct.lengthOfLongestSubstringKDistinct("eceba",2));
+
+//          BinaryTreeMaximumPathSum.TreeNode root = new BinaryTreeMaximumPathSum.TreeNode(1);
+//          root.left = new BinaryTreeMaximumPathSum.TreeNode(2);
+//          root.right= new BinaryTreeMaximumPathSum.TreeNode(3);
+//          System.out.println(new BinaryTreeMaximumPathSum().maxPathSum(root));
+
+//            MaxPointsOnALine.Point point = new MaxPointsOnALine.Point(3,3);
+//            MaxPointsOnALine.Point point1 = new MaxPointsOnALine.Point(5,5);
+//            MaxPointsOnALine.Point point2 = new MaxPointsOnALine.Point(6,6);
+//            MaxPointsOnALine.Point point3 = new MaxPointsOnALine.Point(3,6);
+//            MaxPointsOnALine.Point point4 = new MaxPointsOnALine.Point(-1,-1);
+//            MaxPointsOnALine.Point point5 = new MaxPointsOnALine.Point(2,9);
+//            MaxPointsOnALine maxPointsOnALine = new MaxPointsOnALine();
+//            System.out.println(maxPointsOnALine.maxPoints(new MaxPointsOnALine.Point[]{point,point1,point2,point3,point5}));
+
+
+
     }
 }

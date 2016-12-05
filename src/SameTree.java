@@ -18,18 +18,18 @@ public class SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         StringBuilder pTree = new StringBuilder();
         StringBuilder  qTree = new StringBuilder();
-        inOrder(p,pTree);
-        inOrder(q,qTree);
+        preOrder(p,pTree);
+        preOrder(q,qTree);
         return pTree.toString().equals(qTree.toString());
     }
 
-    private void inOrder(TreeNode node,StringBuilder stringBuilder){
+    private void preOrder(TreeNode node,StringBuilder stringBuilder){
         if(node==null){
             stringBuilder.append("N");
             return;
         }
         stringBuilder.append(Integer.toString(node.val));
-        inOrder(node.left,stringBuilder);
-        inOrder(node.right,stringBuilder);
+        preOrder(node.left,stringBuilder);
+        preOrder(node.right,stringBuilder);
     }
 }

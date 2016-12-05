@@ -5,6 +5,7 @@ import java.util.Iterator;
  * Created by Omer on 11/29/2016.
  */
 public class SingleNumberIII {
+
     public int[] singleNumber(int[] nums) {
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int i: nums){

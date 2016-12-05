@@ -10,7 +10,6 @@ public class DynamicFibonacci {
         for(int i = 2 ; i < n ; i++){
             memo[i] = memo[i-1] + memo[i-2];
         }
-        int[][] xy = new int[5][5];
         return memo[n-1];
     }
 
