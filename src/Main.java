@@ -185,6 +185,11 @@ public class Main {
 //            MaxPointsOnALine maxPointsOnALine = new MaxPointsOnALine();
 //            System.out.println(maxPointsOnALine.maxPoints(new MaxPointsOnALine.Point[]{point,point1,point2,point3,point5}));
 
+            ShortestPalindrome shortestPalindrome = new ShortestPalindrome();
+               System.out.println(shortestPalindrome.shortestPalindrome("abcecbaefefef"));
+               System.out.println(shortestPalindrome.shortestPalindrome("aba"));
+               System.out.println(shortestPalindrome.shortestPalindrome("aaaaa"));
+
 
 
     }
