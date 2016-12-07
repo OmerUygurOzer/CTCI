@@ -185,10 +185,17 @@ public class Main {
 //            MaxPointsOnALine maxPointsOnALine = new MaxPointsOnALine();
 //            System.out.println(maxPointsOnALine.maxPoints(new MaxPointsOnALine.Point[]{point,point1,point2,point3,point5}));
 
-            ShortestPalindrome shortestPalindrome = new ShortestPalindrome();
-               System.out.println(shortestPalindrome.shortestPalindrome("abcecbaefefef"));
-               System.out.println(shortestPalindrome.shortestPalindrome("aba"));
-               System.out.println(shortestPalindrome.shortestPalindrome("aaaaa"));
+//            ShortestPalindrome shortestPalindrome = new ShortestPalindrome();
+//               System.out.println(shortestPalindrome.shortestPalindrome("abcecbaefefef"));
+//               System.out.println(shortestPalindrome.shortestPalindrome("aba"));
+//               System.out.println(shortestPalindrome.shortestPalindrome("aaaaa"));
+
+//        BasicCalculator basicCalculator = new BasicCalculator();
+//        System.out.println(basicCalculator.calculate("2+1+5-2+(2+1)"));
+        HashSet<String> set = new HashSet<>();
+        set.addAll(Arrays.asList("hog", "pot", "tot", "hop", "dot", "cog", "hot", "dog"));
+        WordLadderII wordLadderII = new WordLadderII();
+        System.out.println(wordLadderII.findLadders("hot","dog",set));
 
 
 
