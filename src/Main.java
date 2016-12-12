@@ -192,12 +192,29 @@ public class Main {
 
 //        BasicCalculator basicCalculator = new BasicCalculator();
 //        System.out.println(basicCalculator.calculate("2+1+5-2+(2+1)"));
-        HashSet<String> set = new HashSet<>();
-        set.addAll(Arrays.asList("hog", "pot", "tot", "hop", "dot", "cog", "hot", "dog"));
-        WordLadderII wordLadderII = new WordLadderII();
-        System.out.println(wordLadderII.findLadders("hot","dog",set));
+//        HashSet<String> set = new HashSet<>();
+//        set.addAll(Arrays.asList("hog", "pot", "tot", "hop", "dot", "cog", "hot", "dog"));
+//        WordLadderII wordLadderII = new WordLadderII();
+//        System.out.println(wordLadderII.findLadders("hot","dog",set));
+
+           // System.out.println("great".substring(0,0));
+//        ScrambleString scrambleString = new ScrambleString();
+//        scrambleString.isScramble("abc","cba");
+//         System.out.println( new AddWithoutPlus().addWithoutPlus(8,2));
+//        int[] deck = new int[]{1,2,3,4,5,6,7,8,9,10};
+//        ShuffleAnArray shuffleAnArray = new ShuffleAnArray(deck);
+//        int [] s = shuffleAnArray.shuffle();
+//        for(int i = 0 ; i < s.length; i++){System.out.print(s[i]+ " ");}
+
+//        int[] nums = new int[]{0,1,2,3,4,5,6,7,8,9,10,11,12};
+//        RandomSet randomSet = new RandomSet();
+//        System.out.println(randomSet.generateSet(nums,3));
+//        System.out.println(randomSet.generateSet(nums,4));
+//        System.out.println(randomSet.generateSet(nums,2));
 
 
+        Count2s count2s = new Count2s();
+        System.out.println(count2s.countTwos(4567));
 
     }
 }
