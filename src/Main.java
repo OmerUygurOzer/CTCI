@@ -213,8 +213,21 @@ public class Main {
 //        System.out.println(randomSet.generateSet(nums,2));
 
 
-        Count2s count2s = new Count2s();
-        System.out.println(count2s.countTwos(4567));
+//        Count2s count2s = new Count2s();
+//        System.out.println(count2s.countTwos(4567));
+
+        FlattenBinaryTreeToLinkedList.TreeNode root = new FlattenBinaryTreeToLinkedList.TreeNode(1);
+        root.left = new FlattenBinaryTreeToLinkedList.TreeNode(2);
+        root.right= new FlattenBinaryTreeToLinkedList.TreeNode(5);
+        root.left.left = new FlattenBinaryTreeToLinkedList.TreeNode(3);
+        root.left.right = new FlattenBinaryTreeToLinkedList.TreeNode(4);
+        root.right.right= new FlattenBinaryTreeToLinkedList.TreeNode(6);
+        FlattenBinaryTreeToLinkedList flattenBinaryTreeToLinkedList = new FlattenBinaryTreeToLinkedList();
+        flattenBinaryTreeToLinkedList.flatten(root);
+        while (root!=null){
+            System.out.println(root.val);
+            root = root.right;
+        }
 
     }
 }
