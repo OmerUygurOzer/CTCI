@@ -1,48 +1,25 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 
 /**
- * Created by Omer on 11/23/2016.
+ * Created by Omer on 12/13/2016.
  */
 public class WordBreak {
-
-    public List<String> wordBreak(String s, Set<String> wordDict) {
-        List<String> result = new ArrayList<>();
-        if(s.isEmpty() || wordDict.isEmpty()){return result;}
-        helper(result,s,new ArrayList<>(),wordDict);
-        return result;
+    public boolean wordBreak(String s, Set<String> wordDict) {
+        boolean memo[] = new boolean[s.length()+1];
+        return helper(s,0,memo,wordDict);
     }
 
-    private void helper(List<String> result,String s,List<String> soFar,Set<String> wordDict){
-        if(s.isEmpty()){
-            result.add(flatten(soFar));
-            return;
-        }
-        String substr;
-        for(int i = 1;i<s.length()+1;i++){
-            substr = s.substring(0,i);
-            if(wordDict.contains(substr)){
-                soFar.add(substr);
-                helper(result,s.substring(i,s.length()),new ArrayList<>(soFar),wordDict);
-                soFar.remove(soFar.size()-1);
+    private boolean helper(String s,int index ,boolean[] memo,Set<String> wordDict){
+        if(index == s.length()){return true;}
+        if(memo[index]){return true;}
+        for(int i = index+1 ; i <= s.length(); i++){
+            String cur = s.substring(index,i);
+            System.out.println(cur);
+            if(wordDict.contains(cur)){
+                memo[i] = helper(s,i+1,memo,wordDict);
+                if(memo[i]){return true;}
             }
-
         }
+        return false;
     }
-
-
-    private String flatten(List<String> nonflat){
-        StringBuilder stringBuilder = new StringBuilder();
-        for(String sf : nonflat){
-            stringBuilder.append(sf);
-            stringBuilder.append(" ");
-        }
-        stringBuilder.deleteCharAt(stringBuilder.length()-1);
-        return stringBuilder.toString();
-    }
-
-
-
-
 }

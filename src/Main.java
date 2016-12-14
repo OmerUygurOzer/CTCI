@@ -99,7 +99,7 @@ public class Main {
 //        array.add(Arrays.asList(5,0,-3));
 //        Triangle triangle = new Triangle();
 //        System.out.println(triangle.minimumTotal(array));
-//        WordBreak wordBreak = new WordBreak();
+//        WordBreakII wordBreak = new WordBreakII();
 //        HashSet<String> dict = new HashSet<>();
 //        dict.add("cat");
 //        dict.add("cats");
@@ -216,18 +216,55 @@ public class Main {
 //        Count2s count2s = new Count2s();
 //        System.out.println(count2s.countTwos(4567));
 
-        FlattenBinaryTreeToLinkedList.TreeNode root = new FlattenBinaryTreeToLinkedList.TreeNode(1);
-        root.left = new FlattenBinaryTreeToLinkedList.TreeNode(2);
-        root.right= new FlattenBinaryTreeToLinkedList.TreeNode(5);
-        root.left.left = new FlattenBinaryTreeToLinkedList.TreeNode(3);
-        root.left.right = new FlattenBinaryTreeToLinkedList.TreeNode(4);
-        root.right.right= new FlattenBinaryTreeToLinkedList.TreeNode(6);
-        FlattenBinaryTreeToLinkedList flattenBinaryTreeToLinkedList = new FlattenBinaryTreeToLinkedList();
-        flattenBinaryTreeToLinkedList.flatten(root);
-        while (root!=null){
-            System.out.println(root.val);
-            root = root.right;
-        }
+//        FlattenBinaryTreeToLinkedList.TreeNode root = new FlattenBinaryTreeToLinkedList.TreeNode(1);
+//        root.left = new FlattenBinaryTreeToLinkedList.TreeNode(2);
+//        root.right= new FlattenBinaryTreeToLinkedList.TreeNode(5);
+//        root.left.left = new FlattenBinaryTreeToLinkedList.TreeNode(3);
+//        root.left.right = new FlattenBinaryTreeToLinkedList.TreeNode(4);
+//        root.right.right= new FlattenBinaryTreeToLinkedList.TreeNode(6);
+//        FlattenBinaryTreeToLinkedList flattenBinaryTreeToLinkedList = new FlattenBinaryTreeToLinkedList();
+//        flattenBinaryTreeToLinkedList.flatten(root);
+//        while (root!=null){
+//            System.out.println(root.val);
+//            root = root.right;
+//        }
+
+        /*
+         Pacific ~   ~   ~   ~   ~
+       ~  1   2   2   3  (5) *
+       ~  3   2   3  (4) (4) *
+       ~  2   4  (5)  3   1  *
+       ~ (6) (7)  1   4   5  *
+       ~ (5)  1   1   2   4  *
+          *   *   *   *   * Atlantic
+         */
+
+//        int [][] matrix = new int[][]{
+//                {1,2,2,3,5},
+//                {3,2,3,4,4},
+//                {2,4,5,3,1},
+//                {6,7,1,4,5},
+//                {5,1,1,2,4}};
+//
+//        PacificAtlanticWaterFlow pacificAtlanticWaterFlow = new PacificAtlanticWaterFlow();
+//        List<int[]> result = pacificAtlanticWaterFlow.pacificAtlantic(matrix);
+//        for(int[] res:result){
+//            System.out.println(res[0] + " - " + res [1]);
+//        }
+
+    //    [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]
+    //    [[0,4],[1,4],[2,2],[1,3],[4,0],[3,1]]
+
+//            WordBreak wordBreak = new WordBreak();
+//            HashSet<String> wordDict = new HashSet<>();
+//            wordDict.add("a"); wordDict.add("aa"); wordDict.add("aaa"); wordDict.add("aaaa"); wordDict.add("aaaaa"); wordDict.add("aaaaaa"); wordDict.add("aaaaaaa"); wordDict.add("aaaaaaaa");
+//            System.out.println(wordBreak.wordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",wordDict));
+
+//        TopKFrequentElements topKFrequentElements = new TopKFrequentElements();
+//        System.out.println(topKFrequentElements.topKFrequent(new int[]{1,1,1,2,2,2,2,2,3,4,4,4,4,4,4,4},4));
+
+        Combinations combinations = new Combinations();
+        System.out.println(combinations.combine(4,2));
 
     }
 }
