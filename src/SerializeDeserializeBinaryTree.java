@@ -43,7 +43,6 @@ public class SerializeDeserializeBinaryTree {
     }
 
     private int load(String[] data, TreeNode node,int index){
-        System.out.print(data[index]);
         node.val = Integer.parseInt(data[index]);
         index++;
         if(!data[index].equals("N")){

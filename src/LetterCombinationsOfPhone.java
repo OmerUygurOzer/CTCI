@@ -7,7 +7,6 @@ import java.util.List;
  */
 public class LetterCombinationsOfPhone {
 
-
     public List<String> letterCombinations(String digits) {
         List<String> result = new ArrayList<>();
         if(digits.isEmpty()){return result;}

@@ -263,8 +263,53 @@ public class Main {
 //        TopKFrequentElements topKFrequentElements = new TopKFrequentElements();
 //        System.out.println(topKFrequentElements.topKFrequent(new int[]{1,1,1,2,2,2,2,2,3,4,4,4,4,4,4,4},4));
 
-        Combinations combinations = new Combinations();
-        System.out.println(combinations.combine(4,2));
+//        Combinations combinations = new Combinations();
+//        System.out.println(combinations.combine(4,2));
+
+//        char[][] board = new char[][]{
+//                {'A','B','C','E'},
+//                {'S','F','C','S'},
+//                {'A','D','E','E'}
+//        };
+//
+//
+//
+//        WordSearchI wordSearchI = new WordSearchI();
+//        System.out.println(wordSearchI.exist(board,"ABCCED"));
+//        System.out.println(wordSearchI.exist(board,"SEE"));
+//        System.out.println(wordSearchI.exist(board,"ABCB"));
+
+//        PalindromePartitioning palindromePartitioning = new PalindromePartitioning();
+//        System.out.println(palindromePartitioning.partition("aab"));
+
+
+//        HashMap<String,Integer> names = new HashMap<>();
+//        names.put("John",10);
+//        names.put("Jon",3);
+//        names.put("Davis",2);
+//        names.put("Kari",3);
+//        names.put("Johnny",11);
+//        names.put("Carlton",8);
+//        names.put("Carleton",2);
+//        names.put("Jonathan",9);
+//        names.put("Carrie",5);
+//
+//        List<String[]> synonyms = new ArrayList<>();
+//        synonyms.add(new String[]{"Jonathan","John"});
+//        synonyms.add(new String[]{"Jon","Johnny"});
+//        synonyms.add(new String[]{"Johnny","John"});
+//        synonyms.add(new String[]{"Kari","Carrie"});
+//        synonyms.add(new String[]{"Carleton","Carlton"});
+//
+//        BabyNames babyNames = new BabyNames();
+//        System.out.println(babyNames.merge(names,synonyms));
+
+        String s = "ADOBECODEBANC";
+        String t = "ABC";
+
+        System.out.println(new MinimumWindowSubstring().minWindow(s,t));
+
+
 
     }
 }
