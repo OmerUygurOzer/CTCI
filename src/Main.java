@@ -304,12 +304,39 @@ public class Main {
 //        BabyNames babyNames = new BabyNames();
 //        System.out.println(babyNames.merge(names,synonyms));
 
-        String s = "ADOBECODEBANC";
-        String t = "ABC";
+//        String s = "ADOBECODEBANC";
+//        String t = "ABC";
+//
+//        System.out.println(new MinimumWindowSubstring().minWindow(s,t));
 
-        System.out.println(new MinimumWindowSubstring().minWindow(s,t));
+//        new Candy().candy(new int[]{5,3,1});
 
+//        int [][] dungeon = new int[][]{
+//                {-2,-3,3},
+//                {-5,-10,1},
+//                {10,30,-5}
+//        };
+//
+//        System.out.println(new DungeonGame().calculateMinimumHP(dungeon));
 
+//        RandomMatrix randomMatrix = new RandomMatrix();
+//        int c = 6;
+//        while(c>=0) {
+//            int[][] mat = randomMatrix.generateMatrix();
+//            for (int i = 0; i < 4; i++) {
+//                for (int j = 0; j < 4; j++) {
+//                    System.out.print(mat[i][j]);
+//                }
+//                System.out.println();
+//            }
+//            System.out.println("==============");
+//            c--;
+//        }
+
+        TrappingRainWater rainWater = new TrappingRainWater();
+        System.out.println(rainWater.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
+        System.out.println(rainWater.trap(new int[]{4,2,3}));
+        System.out.println(rainWater.trap(new int[]{2,0,2}));
 
     }
 }

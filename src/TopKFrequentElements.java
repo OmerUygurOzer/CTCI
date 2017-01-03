@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * Created by Omer on 12/14/2016.
@@ -15,10 +12,19 @@ public class TopKFrequentElements {
         for(int n: nums){
             map.put(n,map.getOrDefault(n,0)+1);
         }
-        
 
-        for(int i = 0 ; i<k ; i++){
+        List[] buckets = new List[nums.length+1];
 
+        for(Integer i : map.keySet()){
+            int b = map.get(i);
+            if(buckets[b]==null){buckets[b] = new LinkedList<>();}
+            buckets[b].add(i);
+        }
+
+        for (int pos = buckets.length - 1; pos >= 0 && result.size() < k; pos--) {
+            if (buckets[pos] != null) {
+                result.addAll(buckets[pos]);
+            }
         }
 
         return result;

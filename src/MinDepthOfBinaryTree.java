@@ -4,7 +4,6 @@
 public class MinDepthOfBinaryTree {
 
 
-
       public class TreeNode {
           int val;
           TreeNode left;

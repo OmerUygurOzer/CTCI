@@ -1,3 +1,5 @@
+import sun.reflect.generics.tree.Tree;
+
 import java.util.*;
 
 /**
@@ -5,31 +7,41 @@ import java.util.*;
  */
 public class SkylineProblem {
     public List<int[]> getSkyline(int[][] buildings) {
-        List<int[]> result = new LinkedList<>();
-
-        List<Building> list = new ArrayList<>();
-        for(int i = 0 ; i < buildings.length ; i++){list.add(new Building(buildings[i][0] , buildings[i][1] , buildings[i][2]));}
-
-
-        Building mostRec = null;
-        Building cur;
-
-        for(int i = 0; i <list.size(); i++){
-
+        List<int[]> result = new ArrayList<>();
+        List<int[]> height = new ArrayList<>();
+        for(int[] b:buildings) {
+            height.add(new int[]{b[0], -b[2]});
+            height.add(new int[]{b[1], b[2]});
         }
-
-
-
+        Collections.sort(height, (a, b) -> {
+            if(a[0] != b[0])
+                return a[0] - b[0];
+            return a[1] - b[1];
+        });
+        TreeMap<Integer,Integer> treeMap = new TreeMap<>(Collections.reverseOrder());
+        treeMap.put(0,1);
+        int prev = 0;
+        for (int[] h: height) {
+            if (h[1] < 0) {
+                Integer cnt = treeMap.get(-h[1]);
+                cnt = ( cnt == null ) ? 1 : cnt + 1;
+                treeMap.put(-h[1], cnt);
+            } else {
+                Integer cnt = treeMap.get(h[1]);
+                if (cnt == 1) {
+                    treeMap.remove(h[1]);
+                } else {
+                    treeMap.put(h[1], cnt - 1);
+                }
+            }
+            int currHeight = treeMap.firstKey();
+            if (prev != currHeight) {
+                result.add(new int[]{h[0], currHeight});
+                prev = currHeight;
+            }
+        }
         return result;
     }
 
 
-    private class Building{
-        int l,r,h;
-        public Building(int l,int r,int h){
-            this.l = l;
-            this.r = r;
-            this.h = h;
-        }
-    }
 }

@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by Omer on 11/23/2016.
@@ -8,38 +6,29 @@ import java.util.Set;
 public class WordBreakII {
 
     public List<String> wordBreak(String s, Set<String> wordDict) {
-        List<String> result = new ArrayList<>();
-        if(s.isEmpty() || wordDict.isEmpty()){return result;}
-        helper(result,s,new ArrayList<>(),wordDict);
-        return result;
+        HashMap<String,LinkedList<String>> memo = new HashMap<>();
+        return helper(s,wordDict,memo);
     }
 
-    private void helper(List<String> result,String s,List<String> soFar,Set<String> wordDict){
-        if(s.isEmpty()){
-            result.add(flatten(soFar));
-            return;
+    private LinkedList<String> helper(String s,Set<String> wordDict,HashMap<String,LinkedList<String>> memo){
+        if(memo.containsKey(s)){
+            return memo.get(s);
         }
-        String substr;
-        for(int i = 1;i<s.length()+1;i++){
-            substr = s.substring(0,i);
-            if(wordDict.contains(substr)){
-                soFar.add(substr);
-                helper(result,s.substring(i,s.length()),new ArrayList<>(soFar),wordDict);
-                soFar.remove(soFar.size()-1);
+
+        LinkedList<String> result = new LinkedList<>();
+        if(s.length()==0){
+            result.add("");
+            return result;
+        }
+
+        for(String word : wordDict){
+            if(s.startsWith(word)){
+                List<String> cur = helper(s.substring(word.length()),wordDict,memo);
+                for(String w : cur){result.add(word + (w.isEmpty()? ""  : " ")+w);}
             }
-
         }
-    }
-
-
-    private String flatten(List<String> nonflat){
-        StringBuilder stringBuilder = new StringBuilder();
-        for(String sf : nonflat){
-            stringBuilder.append(sf);
-            stringBuilder.append(" ");
-        }
-        stringBuilder.deleteCharAt(stringBuilder.length()-1);
-        return stringBuilder.toString();
+        memo.put(s,result);
+        return result;
     }
 
 
