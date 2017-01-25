@@ -6,6 +6,8 @@ import java.util.Random;
  */
 public class ShuffleDeck {
     //CTCI
+    Random random = new Random();
+
     public void shuffle(String[] deck,int index){
         if(index == deck.length){return;}
         int swapIndex = getRandom(index,deck.length-1);
@@ -16,6 +18,6 @@ public class ShuffleDeck {
     }
 
     private int getRandom(int min,int max){
-        return new Random().nextInt(max-min)+min+1;
+        return random.nextInt(max-min)+min+1;
     }
 }

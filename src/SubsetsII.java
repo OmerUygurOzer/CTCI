@@ -22,7 +22,6 @@ public class SubsetsII {
             result.add(new ArrayList<>(cur));
             helper(result,cur,i+1,nums);
             cur.remove(cur.size()-1);
-
             while(i + 1 < nums.length && nums[i] == nums[i + 1]) i++;
         }
     }

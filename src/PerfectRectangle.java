@@ -30,10 +30,10 @@ public class PerfectRectangle {
         return checkForRect(recTable);
     }
 
-    private  void scan(int[] rect,int[][] rectTable){
-        for(int x = rect[0]; x < rect[2];x++){
-            for(int y = rect[1];y<rect[3];y++){
-                rectTable[x-leftMost][y-bot] = rectTable[x-leftMost][y-bot]+1;
+    private  void scan(int[] rect,int[][] rectTable) {
+        for (int x = rect[0]; x < rect[2]; x++) {
+            for (int y = rect[1]; y < rect[3]; y++) {
+                rectTable[x - leftMost][y - bot] = rectTable[x - leftMost][y - bot] + 1;
             }
         }
     }

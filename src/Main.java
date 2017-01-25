@@ -333,10 +333,14 @@ public class Main {
 //            c--;
 //        }
 
-        TrappingRainWater rainWater = new TrappingRainWater();
-        System.out.println(rainWater.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
-        System.out.println(rainWater.trap(new int[]{4,2,3}));
-        System.out.println(rainWater.trap(new int[]{2,0,2}));
+//        TrappingRainWater rainWater = new TrappingRainWater();
+//        System.out.println(rainWater.trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
+//        System.out.println(rainWater.trap(new int[]{4,2,3}));
+//        System.out.println(rainWater.trap(new int[]{2,0,2}));
 
+//        Subsets subsets = new Subsets();
+//        System.out.println(subsets.subsets(new int[]{1,2,3}));
+
+        System.out.println(new SortCharactersByFrequency().frequencySort("Aabb"));
     }
 }

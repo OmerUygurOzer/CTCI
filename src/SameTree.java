@@ -24,10 +24,7 @@ public class SameTree {
     }
 
     private void preOrder(TreeNode node,StringBuilder stringBuilder){
-        if(node==null){
-            stringBuilder.append("N");
-            return;
-        }
+        stringBuilder.append(node==null?"N":Integer.toString(node.val));
         stringBuilder.append(Integer.toString(node.val));
         preOrder(node.left,stringBuilder);
         preOrder(node.right,stringBuilder);
