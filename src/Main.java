@@ -341,6 +341,9 @@ public class Main {
 //        Subsets subsets = new Subsets();
 //        System.out.println(subsets.subsets(new int[]{1,2,3}));
 
-        System.out.println(new SortCharactersByFrequency().frequencySort("Aabb"));
+        //System.out.println(new SortCharactersByFrequency().frequencySort("Aabb"));
+
+        ExpressionAddOperators expressionAddOperators = new ExpressionAddOperators();
+        System.out.println(expressionAddOperators.addOperators("105",5));
     }
 }

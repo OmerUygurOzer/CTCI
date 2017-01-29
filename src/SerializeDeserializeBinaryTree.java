@@ -24,7 +24,7 @@ public class SerializeDeserializeBinaryTree {
             stringBuilder.append("N/");
             return;
         }
-        stringBuilder.append(Integer.toString(node.val) + "/");
+        stringBuilder.append(Integer.toString(node.val)).append("/");
         inOrder(node.left,stringBuilder);
         inOrder(node.right,stringBuilder);
     }
