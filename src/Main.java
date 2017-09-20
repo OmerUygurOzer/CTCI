@@ -131,10 +131,10 @@ public class Main {
 
 //        FlipGame flipGame = new FlipGame();
 //        System.out.println(flipGame.generatePossibleNextMoves("++++"));
-//        MoveZeroes moveZeroes = new MoveZeroes();
-//        int[] vals = new int[]{1,0,5,6,0,8,0,0,7,29,68,12,78,0,5,7,9,95,51,23,68,0,0,0,0,0,0,0};
-//        moveZeroes.moveZeroes(vals);
-//        for(int i:vals){System.out.print(i);}
+        MoveZeroes moveZeroes = new MoveZeroes();
+        int[] vals = new int[]{1,0,5,6,0,8,0,0,7,29,68,12,78,0,5,7,9,95,51,23,68,0,0,0,0,0,0,0};
+        moveZeroes.moveZeroes(vals);
+        for(int i:vals){System.out.print(i);}
 
 //        ZigZagIterator zigZagIterator = new ZigZagIterator(Arrays.asList(1,2,7,3,8),Arrays.asList(3,4,5,6));
 //        while (zigZagIterator.hasNext()){
@@ -343,7 +343,9 @@ public class Main {
 
         //System.out.println(new SortCharactersByFrequency().frequencySort("Aabb"));
 
-        ExpressionAddOperators expressionAddOperators = new ExpressionAddOperators();
-        System.out.println(expressionAddOperators.addOperators("105",5));
+//        ExpressionAddOperators expressionAddOperators = new ExpressionAddOperators();
+//        System.out.println(expressionAddOperators.addOperators("105",5));
+
+//        BoxedHashQueue test = new BoxedHashQueue();
     }
 }

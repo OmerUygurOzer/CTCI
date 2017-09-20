@@ -10,8 +10,6 @@ public class SerializeDeserializeBinaryTree {
           TreeNode(int x) { val = x; }
       }
 
-
-
     public String serialize(TreeNode root) {
         StringBuilder stringBuilder = new StringBuilder();
         inOrder(root,stringBuilder);

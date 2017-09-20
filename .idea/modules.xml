@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CTCI.iml" filepath="$PROJECT_DIR$/CTCI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JData/JData.iml" filepath="$PROJECT_DIR$/JData/JData.iml" />
     </modules>
   </component>
 </project>
